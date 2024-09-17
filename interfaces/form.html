@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RoadShare |Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+      }
+      .container {
+        max-width: 700px;
+        width: 100%;
+        background-color: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+      }
+      .title {
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        border-radius: 5px;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Find Your Travel Buddy</div>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="branch">Branch</label>
+            <input type="text" class="form-control" id="branch" placeholder="Enter your branch" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="date">Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="departurePlace">Place of Departure</label>
+            <input type="text" class="form-control" id="departurePlace" placeholder="Enter place of departure" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="destination">Destination</label>
+            <input type="text" class="form-control" id="destination" placeholder="Enter destination" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="contactNo">Contact No</label>
+            <input type="text" class="form-control" id="contactNo" placeholder="Enter your contact number" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+      </form>
+      <p></p>
+      <p>Prefer to browse first? <a class="nav-link" href="interface.html"> Check out current travel buddy profiles</a>
+    </p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
