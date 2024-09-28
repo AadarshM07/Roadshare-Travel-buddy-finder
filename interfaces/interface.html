@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RoadShare | List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="util.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <meta name="robots" content="noindex, follow">
+    <style>
+        /* Ensuring parent containers take full width */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scroll caused by overflow */
+        }
+
+        .table {
+            width: 85%; /* Set table width to 85% */
+            margin: 0 auto; /* Center the table */
+            border-collapse: collapse; /* Ensure borders are touching */
+        }
+
+        .limiter, .container-table100, .wrap-table100 {
+            width: 100%; /* Ensure parent containers span full width */
+            padding: 0;
+        }
+
+        .row {
+            border-bottom: 2px solid #ddd; /* Add a subtle border between rows */
+        }
+
+        .cell {
+            padding: 20px; /* Add space between cells */
+            font-size: 18px; /* Increase text size */
+            text-align: left; /* Align text to the left for better readability */
+        }
+
+        .cell[data-title="Departure"], .cell[data-title="Destination"] {
+            padding-right: 50px; /* Add space between Departure and Destination */
+        }
+
+        .serial-number {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .table .row:nth-child(even) {
+            background-color: #f9f9f9; /* Add alternate row colors for better readability */
+        }
+
+        /* Optional: Set a max-width for very wide displays */
+        .table {
+            max-width: 100%; /* Allow the table to take full width */
+            margin: 0 auto; /* Center the table horizontally */
+        }
+    </style>
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-table100">
+        <div class="alert alert-info" role="alert">
+            Loading details may take several minutes. Navigate to home page? 
+            <a class="nav-link" href="../index.html">Home Page</a>
+        </div>
+        <div class="wrap-table100">
+            <div class="table">
+                <div class="row header">
+                    <div class="cell serial-number">
+                        S.No.
+                    </div>
+                    <div class="cell">
+                        Full Name
+                    </div>
+                    <div class="cell">
+                        Branch
+                    </div>
+                    <div class="cell">
+                        Date
+                    </div>
+                    <div class="cell">
+                        Timeline
+                    </div>
+                    <div class="cell">
+                        Departure
+                    </div>
+                    <div class="cell">
+                        Destination
+                    </div>
+                    <div class="cell">
+                        Contact Info
+                    </div>
+                </div>
+
+                <!-- Placeholder for rows -->
+                <div class="row">
+                    <div class="cell serial-number">
+                        1
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Aadarsh mahesh
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        12:00 - 1:00
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kayankulam
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell serial-number">
+                        2
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Koushik Rajesh
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        15:00-15:30
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Karunagappalli
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        3
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        M. Mahidhara Reddy
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        8:00 - 9:00 AM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kayamkulam railway station
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri ashram
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        4
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Sridhar Sailash Pillai
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        5:00 PM - 9:00 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Ernakulam
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell serial-number">
+                        5
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Rithudev
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        ECE
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        19:45-20:15
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kayamkulam Railway Station
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri Ashram
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        6
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Manjari M
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        Electronics and Communication Engineering
+                    </div>
+                    <div class="cell" data-title="Date">
+                        30/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        6:00 - 7:30 AM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kayankulam Junction
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amrita Girls Hostel
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        7
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        R Harishanker
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        14:45-16:10
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Ettumanoor, Kottayam
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell serial-number">
+                        8
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Niranjana Anil
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        ECE A
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        05:15 - 08:30
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Parasshala
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Karunagappally
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        9
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Rahul Krishna S
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        Electronics and Communication Engineering
+                    </div>
+                    <div class="cell" data-title="Date">
+                        30/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        6:30 - 7:00 AM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kollam
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        10
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        G V Sainath
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        9:00 - 5:00 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Nellore
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell serial-number">
+                        11
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Archana S Nidhi
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        17:00-18:30
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Cherthala
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Sarswati hostel
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        12
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Anjo
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        6:45-7:00
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Thrissur
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell serial-number">
+                        13
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Gunisha Kaur
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        ECE B
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        2:00 - 3:00 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amrita Girls Hostel
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        14
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        G. Deekshitha
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        5:15 - 6:00 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Ongole
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        15
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Aishwarya M
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        8:30 AM - 5:30 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kanghagad
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        16
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Safa Sirajudeen
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        1:00 - 4:00 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Aluva
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        17
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Badarinath
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        2:30 PM - 6:30 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Thrissur
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        18
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Anamika CT
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        10:00 - 11:00 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kozhikode
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        19
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Amritha VM
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        28/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        6:00 - 9:30 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kadapakada
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell serial-number">
+                        19
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Sneha Subhash T
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        6:00 - 9:30 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kannur
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kayamkulam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        20
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Kalyani Senthil
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        ECE-A
+                    </div>
+                    <div class="cell" data-title="Date">
+                        29/09/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        6:00 - 9:30 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Kottayam
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Amritapuri
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell serial-number">
+                        21
+                    </div>
+                    <div class="cell" data-title="Full Name">
+                        Karthik K Jash
+                    </div>
+                    <div class="cell" data-title="Branch">
+                        EAC
+                    </div>
+                    <div class="cell" data-title="Date">
+                        12/10/2024
+                    </div>
+                    <div class="cell" data-title="Timeline">
+                        6:00 - 9:30 PM
+                    </div>
+                    <div class="cell" data-title="Departure">
+                        Karunagappally
+                    </div>
+                    <div class="cell" data-title="Destination">
+                        Kottayam
+                    </div>
+                    <div class="cell" data-title="Contact Info">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQbz6AcIyn-9YLJbkXq4uW_g4gicLVbFhzSnvxD7atC3ds6g/viewform?usp=sf_link">Request</a>
+                    </div>
+                </div>
+                
+                
+                
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8c4200a36ee03e03","serverTiming":{"name":{"cfExtPri":true,"cfL4":true}},"version":"2024.8.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
+</body>
+</html>
